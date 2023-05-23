@@ -60,7 +60,7 @@ fetch("https://sso.playa-games.com/json/login?client_id=i43nwwnmfc5tced4jtuk4auu
             let splitInstructor = instructor.split('/');
             let splitGuildPet = guildPet.split('/');
 
-            splitLevels.map(lvl => {
+            splitLevels = splitLevels.map(lvl => {
               return lvl.length <= 3 ? lvl : lvl.slice(1);
             });
 
